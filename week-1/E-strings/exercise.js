@@ -2,4 +2,4 @@
 var message = "Javascript is easy";
 
 console.log(message);
-console.log(typeof(message));
+console.log(typeof message);
