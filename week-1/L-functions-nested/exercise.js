@@ -25,12 +25,13 @@ function percentage(a, b) {
     return (a / (a + b)) * 100;
 }
 
-function createGreeting()
 let percentageStudents = percentage(8, 15);
 
 let percentageMentors = percentage(15, 8);
 
-//let message = "Percentage students: 
+function createGreeading()
+
+//let message = "Percentage students:
 
 console.log(percentageStudents);
 
