@@ -25,14 +25,13 @@ function percentage(a, b) {
     return (a / (a + b)) * 100;
 }
 
-let percentageStudents = percentage(8, 15);
+let percentageStudents = percentage(15, 8);
 
-let percentageMentors = percentage(15, 8);
+let percentageMentors = percentage(8, 15);
 
-//function createGreeting()
+function createGreeting(percent, groupName) {
+    console.log("Percentage " + groupName + ": " + Math.round(percent) + "%");
+}
 
-//let message = "Percentage students:
-
-console.log(percentageStudents);
-
-console.log(percentageMentors);
+createGreeting(percentageStudents, "students");
+createGreeting(percentageMentors, "mentors");
