@@ -29,7 +29,7 @@ let percentageStudents = percentage(8, 15);
 
 let percentageMentors = percentage(15, 8);
 
-function createGreeading()
+//function createGreeting()
 
 //let message = "Percentage students:
 
