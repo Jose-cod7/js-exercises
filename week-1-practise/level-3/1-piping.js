@@ -12,19 +12,25 @@
 
 var startingValue = 5;
 
+function operations(a) {
+    return (a * 2 + 10).toFixed(2);
+}
+
+let result = operations(startingValue);
+
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
 
 function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 function multiply(a, b) {
-  return a * b;
+    return a * b;
 }
 
 function format(num) {
-  return "£" + num.toFixed(2);
+    return "£" + num.toFixed(2);
 }
 
 console.log("Expected result: 20.00");
