@@ -7,12 +7,12 @@
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
-    return typeof number === Math.sign(number);
+    return number < 0;
 }
 
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-    return typeof number !== 5;
+    return number >= 0 && number <= 10;
 }
 
 /* 
