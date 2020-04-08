@@ -5,16 +5,21 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+    return arr[0];
+    // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+    let length = arr.length;
+    let lastIndex = length - 1;
+    return arr[lastIndex];
+
+    // complete this statement
 }
 
 /* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+          DO NOT EDIT BELOW THIS LINE
+          --------------------------- */
 var numbers = [1, 2, 3];
 var names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
 
@@ -23,9 +28,9 @@ console.log(last(numbers));
 console.log(last(names));
 
 /* 
-  EXPECTED RESULT
-  ---------------
-  1
-  3
-  Joe
-*/
+          EXPECTED RESULT
+          ---------------
+          1
+          3
+          Joe
+        */
