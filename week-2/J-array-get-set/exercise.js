@@ -10,9 +10,7 @@ function first(arr) {
 }
 
 function last(arr) {
-    let length = arr.length;
-    let lastIndex = length - 1;
-    return arr[lastIndex];
+    return arr[arr.length - 1];
 
     // complete this statement
 }
