@@ -14,6 +14,7 @@ function isBetween5and10(number) {
 }
 
 function isShortName(name) {
+    //use only return
     if (name.length > 0 && name.length <= 6) {
         return true;
     }
@@ -21,10 +22,8 @@ function isShortName(name) {
 }
 
 function startsWithD(name) {
-    if (name.startsWith("D")) {
-        return true;
-    }
-    return false;
+    //use only return
+    return name.startsWith("D");
 }
 
 /* 
