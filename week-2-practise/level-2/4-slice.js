@@ -5,7 +5,11 @@
 // - remove the item at the specified index
 
 function remove(arr, index) {
-    return arr.slice(0, 2) + index;
+    const beforeIndex = arr.slice(0, index);
+    const afterIndex = arr.slice(index + 1, arr.length);
+    console.log(beforeIndex);
+    console.log(afterIndex);
+    return beforeIndex.concat(afterIndex);
 }
 
 /* 
