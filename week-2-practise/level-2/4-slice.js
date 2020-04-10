@@ -7,8 +7,7 @@
 function remove(arr, index) {
     const beforeIndex = arr.slice(0, index);
     const afterIndex = arr.slice(index + 1, arr.length);
-    console.log(beforeIndex);
-    console.log(afterIndex);
+
     return beforeIndex.concat(afterIndex);
 }
 
