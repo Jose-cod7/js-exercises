@@ -5,24 +5,53 @@
 // Tip: write other small functions for each requirement
 
 function validate(num) {
-    if (num typeof)
+    if (typeof num === "number") {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+function validate2(num) {
+    if (num <= 100) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validate1(num) {
+    if (num > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validate3(num) {
+    if (num < 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 /* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+       DO NOT EDIT BELOW THIS LINE
+       --------------------------- */
 
 console.log(validate(10));
-console.log(validate(10.5));
-console.log(validate(101));
-console.log(validate(-12));
+console.log(validate1(10.5));
+console.log(validate2(101));
+console.log(validate3(-12));
 console.log(validate("16"));
 
 /* 
-  EXPECTED RESULT
-  ---------------
-  true
-  true
-  false
-  false
-  false
-*/
+         EXPECTED RESULT
+                      ---------------
+                      true
+                      true
+                      false
+                      false
+                      false
+                    */
