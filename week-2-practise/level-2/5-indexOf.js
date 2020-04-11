@@ -8,6 +8,8 @@ function remove(arr, valueToRemove) {
     let indexToRemove = arr.indexOf(valueToRemove);
     let arrayBefore = arr.slice(0, indexToRemove);
     let arrayAfter = arr.slice(indexToRemove + 1, arr.length);
+    //console.log({ arrayBefore });
+    //console.log({ arrayAfter });
     return arrayBefore.concat(arrayAfter);
     // complete this statement
 }
