@@ -4,7 +4,18 @@
 
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
+var sortedNums = nums2.sort(function(a, b) {
+    if (a > b) {
+        return 1;
+    }
+    if (a === b) {
+        return 0;
+    }
+    if (a < b) {
+        return -1;
+    }
+});
+// complete this statement
 
 console.log(sortedNums);
 
