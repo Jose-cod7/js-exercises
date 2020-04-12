@@ -4,9 +4,22 @@
 // - insert `newValue` at that index
 // - NOT change the original array
 // - return a new array with the replacement value inserted
+//need the value to replace
 
 function replace(arr, valueToReplace, newValue) {
-    return; // complete this statement
+    let indexToReplace = arr.indexOf(valueToReplace);
+    //console.log({ indexToReplace });
+    let valueToBefore = arr.slice(0, indexToReplace);
+
+    // valueToBefore.concat([newValue]); same result, option 2
+    valueToBefore[indexToReplace] = newValue; // origonal option
+    // valueToBefore.push(newValue); same result, option 3
+
+    let valueAfter = arr.slice(indexToReplace + 1, arr.length);
+    //console.log({ valueToBefore });
+    //console.log({ valueAfter });
+
+    return valueToBefore.concat(valueAfter); // complete this statement
 }
 
 /* 
