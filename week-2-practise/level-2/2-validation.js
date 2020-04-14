@@ -5,35 +5,19 @@
 // Tip: write other small functions for each requirement
 
 function validate(num) {
-    if (typeof num === "number") {
-        return true;
-    } else {
-        return false;
-    }
+    return IsNumber(num) && IsEqualOrLess(num) && isPositive(num);
 }
 
-function validate2(num) {
-    if (num <= 100) {
-        return true;
-    } else {
-        return false;
-    }
+function IsNumber(num) {
+    return typeof num === "number";
 }
 
-function validate1(num) {
-    if (num > 0) {
-        return true;
-    } else {
-        return false;
-    }
+function IsEqualOrLess(num) {
+    return num <= 100;
 }
 
-function validate3(num) {
-    if (num < 0) {
-        return false;
-    } else {
-        return true;
-    }
+function isPositive(num) {
+    return num > 0;
 }
 
 /* 
@@ -41,9 +25,9 @@ function validate3(num) {
        --------------------------- */
 
 console.log(validate(10));
-console.log(validate1(10.5));
-console.log(validate2(101));
-console.log(validate3(-12));
+console.log(validate(10.5));
+console.log(validate(101));
+console.log(validate(-12));
 console.log(validate("16"));
 
 /* 
